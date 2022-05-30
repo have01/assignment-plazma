@@ -113,7 +113,6 @@ const App = () => {
       />
       <Pagination
         count={10}
-        color="primary"
         postPerPage={postPerPage}
         totalPosts={posts.length}
         paginate={paginate}

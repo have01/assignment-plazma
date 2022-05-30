@@ -15,6 +15,7 @@ const Pagination = ({ postPerPage, totalPosts, paginate, handlePrevbtn, handleNe
       <ul  className='pagination'>
 
         <FcPrevious size={30}
+          style={{ color: "#171717" }} 
          onClick={handlePrevbtn} 
           disabled={currentPage === pages[0] ? true : false} />
         {pageNumbers.map(number => (
@@ -22,14 +23,14 @@ const Pagination = ({ postPerPage, totalPosts, paginate, handlePrevbtn, handleNe
           <li key={number} className='page-item' >
 
 
-            < a style={{ borderRadius: '50%', margin: '5px', color: 'black' }} onClick={() => paginate(number)} href='!#' className='page-link'>
+            <div className='round_icons' >    < a style={{ borderRadius: '50%', margin: '5px', color: 'black' }} onClick={() => paginate(number)} href='!#' className='page-link'>
               {number}
-            </a>
+            </a></div>     
 
           </li>
 
         ))}
-        <  FcNext size={30} 
+        <  FcNext size={30} style={{ color: "#171717" }} 
           onClick={handleNextbtn}
           disabled={currentPage === pages[pages.length - 1] ? true : false}
         />
