@@ -1,0 +1,9 @@
+nav {
+    width: 1200px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
